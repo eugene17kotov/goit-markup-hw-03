@@ -1,0 +1,104 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --white-color: #ffffff;
+    --secondary-bg-color: #f5f4fa;
+    --accent-bg-color: #2f303a;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* h1,
+    h2,
+    h3 {
+        color: #212121;
+    } */
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Logo */
+
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    text-decoration: none;
+}
+
+.logo > .accent {
+    color: var(--accent-color);
+}
+
+/* Header */
+
+.header .logo {
+    color: var(--title-text-color);
+}
+
+.header .logo:hover,
+.header .logo:focus {
+    color: var(--accent-color);
+}
+
+/* Site-nav */
+
+.site-nav .link,
+.header .contacts {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contacts.link:hover,
+.contacts.link:focus,
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--accent-bg-color);
+}
+
+.footer .logo {
+    color: var(--white-color);
+}
+
+.footer .logo:hover,
+.footer .logo:focus,
+.address:hover,
+.address:focus {
+    color: var(--accent-color);
+}
+
+.address {
+    color: var(--white-color);
+}
+
+.footer .contacts {
+    color: var(--primary-text-color);
+}

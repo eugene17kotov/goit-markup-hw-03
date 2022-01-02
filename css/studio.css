@@ -1,0 +1,78 @@
+/* Hero */
+
+.hero {
+    background-color: var(--accent-bg-color);
+}
+
+.hero-title {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero .button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* display: flex;
+    align-items: center; 
+    text-align: center;*/
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+    color: var(--accent-color);
+    background-color: var(--white-color);
+}
+
+/* Sections */
+
+.section-title,
+.advantages-title,
+.comand-title {
+    color: var(--title-text-color);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Advantages Section */
+
+.advantages-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Comand Section */
+
+.comand {
+    background-color: var(--secondary-bg-color);
+}
+
+.comand-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.comand .text {
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center; */
+}

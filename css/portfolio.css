@@ -1,0 +1,30 @@
+/* Filters */
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* Content */
+
+.list-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2x;
+    letter-spacing: 0.06em;
+}
+
+.product-type {
+    font-size: 16px;
+    line-height: 1.87;
+}
