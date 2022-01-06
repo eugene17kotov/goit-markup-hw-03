@@ -5,6 +5,8 @@
     --white-color: #ffffff;
     --secondary-bg-color: #f5f4fa;
     --accent-bg-color: #2f303a;
+    --border-color: #eeeeee;
+    --header-border: #ececec;
 }
 
 body {
@@ -35,6 +37,20 @@ body {
     display: none;
 }
 
+.container {
+    width: 1200px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* Logo */
 
 .header-logo {
@@ -50,14 +66,9 @@ body {
 
 /* Header */
 
-.header-container {
+.header .container {
     display: flex;
-    width: 1200px;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    border-bottom: 1px solid var(--header-border);
 }
 
 .site-nav {
@@ -193,19 +204,7 @@ body {
 
 /* Advantages Section */
 
-.advantages-container {
-    width: 1200px;
-    align-items: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.advantages {
+.advantages-list {
     display: flex;
     margin: 0;
     padding: 0;
@@ -239,18 +238,6 @@ body {
 
 /* Features section */
 
-.features-container {
-    width: 1200px;
-    align-items: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .features-title {
     font-weight: 700;
     font-size: 36px;
@@ -276,20 +263,8 @@ body {
 
 /* Comand Section */
 
-.comand-section {
+.comand {
     background-color: var(--secondary-bg-color);
-}
-
-.comand-container {
-    width: 1200px;
-    align-items: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .comand-title {
@@ -336,11 +311,46 @@ body {
     line-height: 1.19;
 }
 
+/* Portfolio Page */
+
+.portfolio .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-title {
+    margin: 0;
+}
+
 /* Filters */
 
+.filters {
+    display: flex;
+    margin: 0 0 50px;
+    padding: 0;
+}
+
+.filters-item {
+}
+
+.filters-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter-button {
+    display: block;
+    border: transparent;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+
     color: var(--title-text-color);
     background-color: var(--secondary-bg-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
 
     cursor: pointer;
 }
@@ -353,7 +363,31 @@ body {
 
 /* Content */
 
-.list-title {
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    width: 370px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.list-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+
+.content-box {
+    padding: 20px 24px;
+}
+
+.card-title {
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -378,16 +412,10 @@ body {
     background-color: var(--accent-bg-color);
 }
 
-.footer-container {
+.footer .container {
     display: flex;
-    width: 1200px;
-    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .footer-logo {
