@@ -54,8 +54,10 @@
         <main>
             <!-- Hero -->
             <section class="hero section">
-                <h1 class="hero-title">Эффективные решения <br />для вашего бизнеса</h1>
-                <button type="button" class="hero-button button">Заказать услугу</button>
+                <div class="container">
+                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                    <button type="button" class="hero-button button">Заказать услугу</button>
+                </div>
             </section>
 
             <!-- Advantages -->
@@ -131,24 +133,43 @@
                     <h2 class="comand-title">Наша команда</h2>
                     <ul class="comand-list list">
                         <li class="comand-item">
-                            <img src="./images/img1.jpg" alt="Игорь" width="270" />
-                            <h3 class="comand-heading">Игорь Демьяненко</h3>
-                            <p lang="en" class="comand-text">Product Designer</p>
+                            <div class="comand-thumb">
+                                <img src="./images/img1.jpg" alt="Игорь" width="270" />
+                            </div>
+                            <div class="comand-content">
+                                <h3 class="comand-heading">Игорь Демьяненко</h3>
+                                <p lang="en" class="comand-text">Product Designer</p>
+                            </div>
                         </li>
+
                         <li class="comand-item">
-                            <img src="./images/img2.jpg" alt="Ольга" width="270" />
-                            <h3 class="comand-heading">Ольга Репина</h3>
-                            <p lang="en" class="comand-text">Frontend Developer</p>
+                            <div class="comand-thumb">
+                                <img src="./images/img2.jpg" alt="Ольга" width="270" />
+                            </div>
+                            <div class="comand-content">
+                                <h3 class="comand-heading">Ольга Репина</h3>
+                                <p lang="en" class="comand-text">Frontend Developer</p>
+                            </div>
                         </li>
+
                         <li class="comand-item">
-                            <img src="./images/img3.jpg" alt="Николай" width="270" />
-                            <h3 class="comand-heading">Николай Тарасов</h3>
-                            <p lang="en" class="comand-text">Marketing</p>
+                            <div class="comand-thumb">
+                                <img src="./images/img3.jpg" alt="Николай" width="270" />
+                            </div>
+                            <div class="comand-content">
+                                <h3 class="comand-heading">Николай Тарасов</h3>
+                                <p lang="en" class="comand-text">Marketing</p>
+                            </div>
                         </li>
+
                         <li class="comand-item">
-                            <img src="./images/img4.jpg" alt="Михаил" width="270" />
-                            <h3 class="comand-heading">Михаил Ермаков</h3>
-                            <p lang="en" class="comand-text">UI Designer</p>
+                            <div class="comand-thumb">
+                                <img src="./images/img4.jpg" alt="Михаил" width="270" />
+                            </div>
+                            <div class="comand-content">
+                                <h3 class="comand-heading">Михаил Ермаков</h3>
+                                <p lang="en" class="comand-text">UI Designer</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -164,7 +185,7 @@
                     </a>
                     <address>
                         <ul class="footer-contacts list">
-                            <li>
+                            <li class="ft-contact-item">
                                 <a
                                     href="https://goo.gl/maps/RZBRHcPRKJoQ98QK8"
                                     target="_blank"
@@ -173,12 +194,12 @@
                                     г. Киев, пр-т Леси Украинки, 26
                                 </a>
                             </li>
-                            <li>
+                            <li class="ft-contact-item">
                                 <a href="mailto:info@devstudio.com" class="footer-contact link">
                                     info@devstudio.com
                                 </a>
                             </li>
-                            <li>
+                            <li class="ft-contact-item">
                                 <a href="tel:+380961111111" class="footer-contact link">
                                     +38 096 111 11 11
                                 </a>
