@@ -7,6 +7,9 @@
     --accent-bg-color: #2f303a;
     --border-color: #eeeeee;
     --header-border: #ececec;
+
+    --title-content-gap: 50px;
+    --card-gap: 30px;
 }
 
 body {
@@ -18,11 +21,21 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* h1,
-    h2,
-    h3 {
-        color: #212121;
-    } */
+/* TOOLS */
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
 
 .list {
     list-style: none;
@@ -39,7 +52,6 @@ body {
 
 .container {
     width: 1200px;
-    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -51,7 +63,13 @@ body {
     padding-bottom: 94px;
 }
 
-/* Logo */
+.button {
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* LOGO */
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -64,23 +82,19 @@ body {
     color: var(--accent-color);
 }
 
-/* Header */
+/* HEADER */
 
 .header .container {
     display: flex;
     border-bottom: 1px solid var(--header-border);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
 }
 
 .site-nav {
     display: flex;
     align-items: center;
-}
-
-.header-logo,
-.nav-link {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .general-nav {
@@ -95,7 +109,6 @@ body {
 .header-contacts {
     display: flex;
     margin-left: auto;
-    margin-right: 0;
 }
 
 .hd-contacts-item:not(:last-child) {
@@ -137,7 +150,9 @@ body {
     color: var(--accent-color);
 }
 
-/* Hero */
+/* MAIN PAGE */
+
+/* HERO */
 
 .hero {
     background-color: var(--accent-bg-color);
@@ -147,10 +162,9 @@ body {
 }
 
 .hero-title {
-    margin: 0 auto;
-    width: 740px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 696px;
 
     color: var(--white-color);
     font-weight: 900;
@@ -158,15 +172,11 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .hero-button {
-    display: block;
-    width: 200px;
-    height: 50px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    margin-top: 30px;
+    padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
 
@@ -186,7 +196,7 @@ body {
     background-color: var(--white-color);
 }
 
-/* Sections */
+/* SECTIONS */
 
 .advantages-caption,
 .features-title,
@@ -202,12 +212,10 @@ body {
     text-align: center;
 }
 
-/* Advantages Section */
+/* ADVANTAGES SECTION */
 
 .advantages-list {
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 .advantages-item {
@@ -215,15 +223,10 @@ body {
 }
 
 .advantages-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.advantages-title {
-    margin: 0;
+    margin-right: var(--card-gap);
 }
 
 .advantages-caption {
-    margin-top: 0;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -232,36 +235,30 @@ body {
     text-transform: uppercase;
 }
 
-.advantages-desc {
-    margin: 0;
-}
-
-/* Features section */
+/* FEATURES SECTION */
 
 .features-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: var(--title-content-gap);
 }
 
 .features-list {
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
 }
 
 .features-item {
-    width: calc((100%-60px) / 3);
+    width: calc((100% - 60px) / 3);
 }
 
 .features-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: var(--card-gap);
 }
 
-/* Comand Section */
+/* COMAND SECTION */
 
 .comand {
     background-color: var(--secondary-bg-color);
@@ -272,18 +269,16 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
+
+    margin-bottom: var(--title-content-gap);
 }
 
 .comand-list {
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 .comand-item {
-    width: calc((100%-90px) / 4);
+    width: calc((100% - 90px) / 4);
     text-align: center;
     border-radius: 4px;
 
@@ -291,11 +286,15 @@ body {
 }
 
 .comand-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: var(--card-gap);
+}
+
+.comand-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .comand-heading {
-    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -304,33 +303,23 @@ body {
 }
 
 .comand-text {
-    margin-top: 0;
-    margin-bottom: 30px;
-
     font-size: 16px;
     line-height: 1.19;
 }
 
-/* Portfolio Page */
+/* PORTFOLIO PAGE */
 
 .portfolio .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.portfolio-title {
-    margin: 0;
-}
-
-/* Filters */
+/* FILTERS */
 
 .filters {
     display: flex;
-    margin: 0 0 50px;
-    padding: 0;
-}
-
-.filters-item {
+    margin-bottom: var(--title-content-gap);
 }
 
 .filters-item:not(:last-child) {
@@ -338,9 +327,6 @@ body {
 }
 
 .filter-button {
-    display: block;
-    border: transparent;
-    border-radius: 4px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-right: 22px;
@@ -361,29 +347,23 @@ body {
     background-color: var(--accent-color);
 }
 
-/* Content */
+/* PORTFOLIO CONTENT */
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    margin-left: calc(-1 * var(--card-gap));
+    margin-top: calc(-1 * var(--card-gap));
 }
 
 .list-item {
-    width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
     border-bottom: 1px solid var(--border-color);
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
 }
 
-.list-item:not(:nth-child(3n)) {
-    margin-right: 30px;
-}
-
-.list-item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
-}
-
-.content-box {
+.card-content {
     padding: 20px 24px;
 }
 
@@ -406,7 +386,7 @@ body {
     line-height: 1.87;
 }
 
-/* Footer */
+/* FOOTER */
 
 .footer {
     background-color: var(--accent-bg-color);
@@ -420,6 +400,8 @@ body {
 
 .footer-logo {
     display: block;
+    margin-bottom: 20px;
+
     color: var(--white-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -430,11 +412,6 @@ body {
 .footer-nav {
     display: flex;
     flex-direction: column;
-}
-
-.footer-contacts {
-    margin-top: 20px;
-    padding: 0;
 }
 
 .footer-logo:hover,
@@ -452,4 +429,8 @@ body {
 
 .footer-contact {
     color: var(--primary-text-color);
+}
+
+.ft-contact-item:not(:last-child) {
+    margin-bottom: 9px;
 }
