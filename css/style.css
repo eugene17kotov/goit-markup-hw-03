@@ -67,7 +67,7 @@ img {
     display: block;
     border: 1px solid transparent;
     border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
 }
 
 /* LOGO */
@@ -220,7 +220,7 @@ img {
 }
 
 .advantages-item {
-    width: calc((100%-90px) / 4);
+    width: calc((100% - 3 * var(--card-gap)) / 4);
 }
 
 .advantages-item:not(:last-child) {
@@ -252,7 +252,7 @@ img {
 }
 
 .features-item {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 2 * var(--card-gap)) / 3);
 }
 
 .features-item:not(:last-child) {
@@ -279,7 +279,7 @@ img {
 }
 
 .comand-item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 3 * var(--card-gap)) / 4);
     text-align: center;
     border-radius: 4px;
 
@@ -358,7 +358,7 @@ img {
 }
 
 .list-item {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - var(--card-gap));
     border-bottom: 1px solid var(--border-color);
     margin-left: var(--card-gap);
     margin-top: var(--card-gap);
